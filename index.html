@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rajarajeswari Dental College</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <h1>RRDCH</h1>
+    <nav>
+        <a href="#" data-key="home">Home</a>
+        <a href="#about" data-key="about">About</a>
+        <a href="#contact" data-key="contact">Contact</a>
+        <a href="student.html">Student</a>
+        <a href="admin.html">Admin</a>
+        <button onclick="toggleLanguage()">🌐 ಕನ್ನಡ</button>
+    </nav>
+</header>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-left">
+        <h1>Advanced Dental Care</h1>
+        <p>World-class treatment & education at RRDCH</p>
+        <button onclick="scrollToForm()">Book Appointment</button>
+    </div>
+
+    <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1588776814546-ec7e8b1d2c3c">
+    </div>
+</section>
+<section class="stats">
+    <div class="stat-box">
+        <h2>10K+</h2>
+        <p>Patients Treated</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>500+</h2>
+        <p>Students</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>50+</h2>
+        <p>Doctors</p>
+    </div>
+</section>
+<section id="features">
+    <h2>Our Services</h2>
+
+    <div class="feature-box">
+        <div class="card">🦷 Dental Checkup</div>
+        <div class="card">🏥 Surgery</div>
+        <div class="card">👨‍⚕️ Expert Doctors</div>
+        <div class="card">💊 Pharmacy</div>
+    </div>
+</section>
+
+
+<!-- About -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>We provide top dental care services and academic excellence.</p>
+</section>
+
+<!-- Appointment Form -->
+<section id="appointment">
+    <h2>Book Appointment</h2>
+    <form id="appointmentForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        
+        <select required>
+            <option>Select Department</option>
+            <option>Orthodontics</option>
+            <option>Oral Surgery</option>
+            <option>Pediatric Dentistry</option>
+        </select>
+        <section id="complaint">
+    <h2>Hostel Complaint System</h2>
+
+    <form id="complaintForm">
+        <input type="text" id="cname" placeholder="Your Name" required>
+        <input type="text" id="room" placeholder="Room Number" required>
+        <textarea id="issue" placeholder="Describe your issue" required></textarea>
+
+        <button type="submit">Submit Complaint</button>
+    </form>
+    <section id="achievements">
+    <h2>Our Achievements</h2>
+
+    <div class="ach-container">
+        <div class="card">🏅 NAAC Accredited Institution</div>
+        <div class="card">🦷 Recognized by Dental Council</div>
+        <div class="card">🏆 Top Dental College Ranking</div>
+        <div class="card">👨‍⚕️ 10,000+ Successful Treatments</div>
+        <div class="card">🎓 95% Placement Rate</div>
+        <div class="card">🌍 Free Dental Camps</div>
+    </div>
+</section>
+    <section id="events">
+    <h2>Events Calendar</h2>
+
+    <table border="1" style="margin:auto;">
+        <tr>
+            <th>Date</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>15 Apr 2026</td>
+            <td>Free Dental Camp</td>
+        </tr>
+        <tr>
+            <td>20 Apr 2026</td>
+            <td>Oral Health Awareness Seminar</td>
+        </tr>
+        <tr>
+            <td>25 Apr 2026</td>
+            <td>Student Workshop</td>
+        </tr>
+    </table>
+</section>
+<section id="live">
+    <h2>Live Updates</h2>
+
+    <marquee>
+        🔴 Free Dental Camp this Sunday | 🦷 New OPD Timings: 9AM–5PM | 📢 Admissions Open for 2026
+    </marquee>
+</section>
+
+    <p id="cmessage"></p>
+
+    <h3>Complaints List</h3>
+    <div id="complaintList"></div>
+</section>
+
+        <input type="date" required>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@rrdch.com</p>
+</section>
+<section id="map">
+    <h2>Hospital Location</h2>
+
+    <iframe 
+        src="https://maps.google.com/maps?q=rajarajeswari%20dental%20college&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="80%" height="300">
+    </iframe>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+<section id="tracking">
+    <h2>Track Appointment</h2>
+
+    <input type="text" id="trackId" placeholder="Enter Patient ID">
+    <button onclick="trackAppointment()">Track</button>
+
+    <p id="trackResult"></p>
+</section>
+<section id="live">
+    <h2>🔴 Live Updates</h2>
+
+    <div id="liveUpdates"></div>
+</section>
+<section id="gallery">
+    <h2>Our Campus</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1588776814546-ec7e8b1d2c3c">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118">
+        <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322">
+    </div>
+</section>

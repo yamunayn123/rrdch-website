@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+
+        #loginBox, #adminPanel {
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0077b6;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox">
+    <h2>Admin Login</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="adminPanel" style="display:none;">
+    <h2>Welcome Admin 🎉</h2>
+
+    <h3>Add Event</h3>
+    <input type="date" id="eventDate">
+    <input type="text" id="eventText" placeholder="Event name">
+    <button onclick="addEvent()">Add Event</button>
+
+    <h3>All Events</h3>
+    <div id="eventList"></div>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
+<h3>Add Live Update</h3>
+
+<input type="text" id="liveInput" placeholder="Enter update">
+<button onclick="addLiveUpdate()">Add Update</button>

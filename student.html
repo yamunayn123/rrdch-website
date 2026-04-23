@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Portal</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+
+        #loginBox, #dashboard {
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0077b6;
+            color: white;
+            border: none;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox">
+    <h2>Student Login</h2>
+    <input type="text" id="studentUser" placeholder="Username"><br>
+    <input type="password" id="studentPass" placeholder="Password"><br>
+    <button onclick="studentLogin()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+    <h2>Welcome Student 🎓</h2>
+
+    <div class="card">
+        <h3>View Events</h3>
+        <div id="eventList"></div>
+    </div>
+
+    <div class="card">
+        <h3>My Complaints</h3>
+        <div id="complaintList"></div>
+    </div>
+    <div class="card">
+    <h3>Add Your Achievement 🏆</h3>
+
+    <input type="text" id="achName" placeholder="Your Name"><br>
+    <input type="text" id="achTitle" placeholder="Achievement Title"><br>
+    <textarea id="achDesc" placeholder="Description"></textarea><br>
+
+    <button onclick="addAchievement()">Submit</button>
+</div>
+
+<div class="card">
+    <h3>Student Achievements</h3>
+    <div id="achievementList"></div>
+</div>
+</div>
+
+<script src="student.js"></script>
+
+</body>
+</html>

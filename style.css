@@ -1,0 +1,260 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(13, 71, 161, 0.8);
+    color: white;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #90caf9;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+.hero-left {
+    max-width: 50%;
+}
+
+.hero-left h1 {
+    font-size: 50px;
+    color: #0d47a1;
+}
+
+.hero-left p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hero-right img {
+    width: 400px;
+    border-radius: 20px;
+}
+section {
+    padding: 60px 20px;
+    section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #00b4d8;
+    display: block;
+    margin: 10px auto;
+}
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #0d47a1;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+
+}
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+button:hover::after {
+    width: 100%;
+}
+#tracking {
+    background: #e3f2fd;
+    padding: 30px;
+}
+#complaint {
+    background: #f1f8ff;
+    padding: 30px;
+}
+
+textarea {
+    margin: 10px;
+    padding: 10px;
+}
+#events {
+    background: #fff3cd;
+    padding: 30px;
+}
+
+#live {
+    background: #ffe5e5;
+    padding: 20px;
+    font-weight: bold;
+}
+#achievements {
+    background: #e6f7ff;
+    padding: 40px;
+    text-align: center;
+}
+
+.ach-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 250px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+#live {
+    background: #ffe5e5;
+    padding: 30px;
+}
+
+#liveUpdates div {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-left: 6px solid red;
+    padding: 12px;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    #liveUpdates div {
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+#about { background: #f1f8ff; }
+#appointment { background: #ffffff; }
+#complaint { background: #f9f9f9; }
+#events { background: #fff3cd; }
+#directions { background: #e8f5e9; }
+input, textarea, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #0d47a1;
+    outline: none;
+}
+section {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.hero-content {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+#liveUpdates div {
+    box-shadow: 0 0 10px red;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: #0d47a1;
+    color: white;
+    padding: 40px;
+}
+
+.stat-box h2 {
+    font-size: 30px;
+}
+:root {
+    --primary: #0d47a1;
+    --secondary: #00b4d8;
+    --light: #f5faff;
+}
+.feature-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
